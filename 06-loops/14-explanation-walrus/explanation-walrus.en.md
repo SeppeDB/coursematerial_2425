@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Walrus Operator
 
 The [walrus operator](https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions) is an operator that can help write more readable code.
@@ -99,3 +100,8 @@ if a = b:    # Should be a == b
 To catch this mistake, Python made it an error to use `=` in an expression, i.e., `=` must be used on its own line.
 This constraint, in turn, caused some need for duplication (see example at the top.)
 To counter this, `:=` was added to the language.
+=======
+## Not part of this course anymore
+
+You can just skip me!
+>>>>>>> 9d2e6f6b0d66889fcf68a22f9172d09f0711fd68

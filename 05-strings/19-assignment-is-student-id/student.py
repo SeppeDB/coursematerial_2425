@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def is_student_id(string):
     string = string.lower()
     first_char = string[0]
@@ -13,3 +14,6 @@ def is_student_id(string):
         return False
 
     return True
+=======
+# write your code here
+>>>>>>> 9d2e6f6b0d66889fcf68a22f9172d09f0711fd68
