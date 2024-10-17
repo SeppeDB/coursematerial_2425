@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 5 / 2 / 1
 def coins(amount):
     coin_qty = coin_5(amount)
@@ -18,6 +17,3 @@ def coin_5(amount):
 
 def coin_2(amount):
     return amount // 2
-=======
-# write your code here
->>>>>>> 9d2e6f6b0d66889fcf68a22f9172d09f0711fd68
