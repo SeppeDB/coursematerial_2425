@@ -1,11 +1,10 @@
 def decode1(word):
-    while True:
-        index = word.find("A")
-        if index < 0:
-            break
-        word = word[0:index] + "o" + word[index + 1 :]
+    index = word.find("A")
 
-    return word
+    if index < 0:
+        return word
+
+    return decode1(word[0:index] + "o" + word[index + 1 :])
 
 
 def decode2(word):
