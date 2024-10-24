@@ -1,10 +1,6 @@
 def gcd(x, y):
-    x = abs(x)
-    y = abs(y)
-
-    lowest = min(x, y)
-    highest = max(x, y)
+    lowest = min(abs(x), abs(y))
 
     for i in range(lowest, 0, -1):
-        if lowest % i == 0 and highest % i == 0:
+        if x % i == 0 and y % i == 0:
             return i

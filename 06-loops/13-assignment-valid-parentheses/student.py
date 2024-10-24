@@ -1,18 +1,16 @@
 def valid_parentheses(string):
-    opened = 0
-    closed = 0
-    total = 0
+    count = 0
 
     for char in string:
-        if char in "()":
-            total += 1
+        if char == "(":
+            count += 1
+        elif char == ")":
+            count -= 1
+            
+            if count < 0:
+                return False
 
-        if char == "(" and opened >= closed:
-            opened += 1
+    return count == 0
 
-        if char == ")" and opened > closed:
-            closed += 1
 
-    return opened + closed == total and closed == opened
-
-print(valid_parentheses("((((((((()(()))("))
+print(valid_parentheses("((((((((())(((()"))
