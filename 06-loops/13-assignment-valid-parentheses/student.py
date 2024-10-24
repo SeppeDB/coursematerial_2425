@@ -13,4 +13,6 @@ def valid_parentheses(string):
         if char == ")" and opened > closed:
             closed += 1
 
-    return opened + closed == total
+    return opened + closed == total and closed == opened
+
+print(valid_parentheses("((((((((()(()))("))

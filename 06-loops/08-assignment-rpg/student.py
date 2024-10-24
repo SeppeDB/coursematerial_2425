@@ -4,11 +4,8 @@ def rpg2(n_sides, goal):
         for j in range(1, n_sides + 1):
             if i + j >= goal:
                 valid_combinations += 1
-
-    valid_combinations /= n_sides**2
-    valid_combinations *= 100
-
-    return valid_combinations
+                
+    return valid_combinations / n_sides ** 2 * 100
 
 
 def rpg3(n_sides, goal):
@@ -18,8 +15,5 @@ def rpg3(n_sides, goal):
             for k in range(1, n_sides + 1):
                 if i + j + k >= goal:
                     valid_combinations += 1
-
-    valid_combinations /= n_sides**3
-    valid_combinations *= 100
-
-    return valid_combinations
+                    
+    return valid_combinations / n_sides ** 3 * 100
